@@ -49,6 +49,11 @@ footer {
     color: #fff;
 }
 
+footer {
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
 /* Links */
 a {
     text-decoration: none;
@@ -138,7 +143,7 @@ footer {
 
 .reviews__personas {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     position: relative;
 }
 
@@ -156,9 +161,150 @@ footer {
 }
 
 /* Contact page */
-input,
+.form input,
 select,
 textarea {
     border: 1px solid #c4c4c4;
     border-radius: 5px;
+    width: 300px;
+    margin-bottom: 15px;
+    
+}
+
+.form input,
+select {
+    height: 30px;  
+}
+
+textarea {
+  height: 195px;
+}
+
+select {
+  width: 305.6px;
+}
+
+
+label {
+  margin-bottom: 8px;
+  font-size: 0.6em;
+}
+
+.submit input {
+  margin-bottom: 170px;
+  margin-top: 20px;
+}
+
+.contact-heading,
+.submit {
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+}
+
+.form__one {
+    display: flex;
+    flex-direction: column;
+    margin:20px;
+}
+
+.form__two {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.checkbox {
+  display: flex;
+  position:relative;
+}
+
+.checkbox__label {
+  margin-bottom: 0;
+  margin-left 5px;
+
+}
+#email-updates {
+  width:25px;
+  height: 25px;
+  margin-left: 0;
+}
+
+/*Adirondak-red product page*/
+
+.product-adirondackred {
+  display: flex;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  justify-content: center;
+}
+
+/*@media only screen and (min-width: 600px){
+  .product-adirondackred {
+      flex-direction: row;
+  }*/
+
+ 
+  
+
+.product-images {
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 420px;
+  margin: 20px;
+
+}
+
+.product-images__small {
+  display:flex;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.product-images__large {
+  width: 100%;
+}
+
+.product-images__small {
+  max-width: 450px;
+}
+.product-images__smallest {
+  width: 95%;
+}
+
+figure {
+  justify-content: space-evenly;
+  margin:0;
+}
+
+/*.figure-one {
+  margin; 10px 20px 10px 0;
+}*/
+
+.product-details {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  position:relative;
+  width: 380px;
+  margin:20px;
+
+}
+
+.product-details__heading {
+  margin-top: 0;
+}
+
+.product-details__price {
+  font-size: 1.5em;
+}
+
+.product-details__cta {
+  position: absolute;
+  top: 50px;
+  
 }
