@@ -27,22 +27,18 @@ nav li {
 
 header {
     display: flex;
-}
-
-.logo {
-    font-size: 1.5em;
+    align-items: center;
 }
 
 nav {
-    position: relative;
+  margin-left: 25px;
 }
 
-.menu {
-    position: relative;
-    left: 40px;
-    top: 3px;
-}
 
+.logo {
+    font-size: 1.2em;
+}
+    
 header,
 footer {
     background-color: #202020;
@@ -117,48 +113,49 @@ footer {
 }
 
 .selling-points {
-    padding: 80px;
-    display: flex;
-    justify-content: space-evenly;
-    position: relative;
+  margin: 50px auto;
 }
+
+.selling-points, 
+.reviews__content {
+  max-width: 1000px;
+  display: flex; 
+}
+
+.selling-points > *,
+.reviews__content > * {  /*select all the elements inside of selling-points */
+  flex: 1; /*the elements each take up the same amount of space*/
+}
+
 .selling-points__images {
-    border-radius: 80px;
-    width: 450px;
-    height: 300px;
-    margin-left: 30px;
+    border-radius: 70px;
+    width: 85%;
 }
 
-.selling-points__text {
-    position: relative;
-    margin-right: 30px;
-    top: 20px;
-}
-.reviews__heading {
-    text-align: center;
-}
+
+
 .reviews {
-    padding-top: 20px;
+  text-align: center;
+  padding: 50px;
 }
 
-.reviews__personas {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
+.reviews__content {
+  text-align:left;
+  margin: auto;
 }
 
-.reviews__text {
-    max-width: 647px;
-    max-height: 234px;
-    margin: 50px;
+.reviews__content div {
+  margin: 50px;
 }
+
 .review__images {
-    border-radius: 50%;
-    width: 12%;
-    position: relative;
-    left: 180px;
-    bottom: 70px;
+  width: 80px;
+  border-radius: 50%;
+  position: relative;
+  left: 120px;
+  bottom: 40px;
 }
+
 
 /* Contact page */
 .form input,
